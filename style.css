@@ -9,3 +9,25 @@
 
 
 
+
+
+#new{
+    animation-duration: 2s;
+    animation-name: linear1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+}
+
+
+@keyframes linear1 {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+
