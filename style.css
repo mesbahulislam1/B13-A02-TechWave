@@ -1,33 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import "tailwindcss";
 
-*{
-    font-family: "Inter", sans-serif;
-    
+* {
+  font-family: "Inter", sans-serif;
 }
 
-
-
-
-
-#new{
-    animation-duration: 2s;
-    animation-name: linear1;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    
+#new {
+  animation-duration: 2s;
+  animation-name: linear1;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
+#micro {
+  animation-name: micro;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes micro {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 @keyframes linear1 {
-    0%{
-        transform: translateY(-10px);
-    }
-    100%{
-        transform: translateY(10px);
-    }
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px) scale(1.12);
+  }
 }
-
-
